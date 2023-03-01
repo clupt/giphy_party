@@ -5,7 +5,7 @@ async function getGiphy(evt) {
 
   let search = $("#search").val();
 
-  let response = await axios.get(" http://api.giphy.com/v1/gif", {
+  let response = await axios.get("http://api.giphy.com/v1/gif/search?", {
     params: { search },
   });
 
